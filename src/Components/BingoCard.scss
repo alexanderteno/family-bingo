@@ -1,0 +1,25 @@
+.bingo-card {
+    width: 402px;
+    height: 402px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: rgba(black, 1);
+
+    div[class^=cell] {
+        background-color: white;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        white-space: pre-wrap;
+        text-overflow: ellipsis;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
