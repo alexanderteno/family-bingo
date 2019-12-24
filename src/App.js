@@ -1,14 +1,16 @@
 import React from 'react';
-import BingoCard from './Components/BingoCard';
+import BingoCard from './components/BingoCard';
+import BingoControls from './components/BingoControls';
 import './App.scss';
 
 function App() {
   return (
     <div className="app">
-      <h1 className="header">
-        Teno/Perry Family Bingo
-      </h1>
+      <h2 className="header">
+        TENO/PERRY FAMILY BINGO
+      </h2>
       <BingoCard />
+      <BingoControls />
     </div>
   );
 }

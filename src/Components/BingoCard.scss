@@ -1,25 +1,39 @@
 .bingo-card {
-    width: 402px;
-    height: 402px;
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 1px;
-    grid-row-gap: 1px;
-    grid-template-rows: repeat(5, 1fr);
-    background-color: rgba(black, 1);
+  color: black;
+  width: 404px;
+  height: 404px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  grid-template-rows: repeat(5, 1fr);
+  background-color: rgba(black, 1);
 
-    div[class^=cell] {
-        background-color: white;
-        width: 80px;
-        height: 80px;
-        text-align: center;
-        white-space: pre-wrap;
-        text-overflow: ellipsis;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  div[class^="cell"] {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 8px;
+    font-weight: bold;
+  }
 
+  .new-game {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 3;
+  }
 }

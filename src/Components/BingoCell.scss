@@ -1,0 +1,10 @@
+div[class^=cell] {
+    &.marked {
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        background-color: rgba(white, 0.2);
+        background: url('../images/ornament.png');
+        background-position: center;
+        background-size: cover;
+    }
+}
